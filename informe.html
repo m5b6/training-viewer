@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        matiasberrios, 2022
+
+    <p class="informe-title">
+        Informe
+
+    </p>
+    <p class="subtitle"><a href="index.html">ir a la visualización</a></p>
+
+
+    <p class ="informe-header">
+            1. Contextualización
+    </p>
+    <p class="informe-body">
+        Según la OMS,
+        La actividad física corresponde a cualquier movimiento corporal producido por los músculos esqueléticos, 
+        con el consiguiente consumo de energía. La realización de actividad física en todas sus expresiones es 
+        sumamente beneficiosa para nosotros, especialmente si se lleva a cabo de forma regular y monitoreada.
+    </p>
+    <p class="informe-body">
+        Los datos empleados para realizar la herramienta de visualización en cuestión, son mediciones cuantitativas de 
+        del entrenamiento muscular (ejercicio realizado, repeticiones hechas, series realizadas, etc.), 
+        recopilados por un dipositivo de monitoreo Garmin durante sesiones de trabajo de los últimos meses.
+        Estos datos fueron recopilados por mi dispositivo personal; han sido divididos por grupo muscular y procesados con el fin de
+        ser más legibles y manejables. Si bien la herramienta en cuestión muestra únicamente los datos recopilados por mí,
+        puede funcionar para cualquier ususario de igual manera siempre y cuando se le otorgue una base de datos proveniente de un 
+        dispositivo de monitoreo de actividad física, y se le aplique procesamiento previo.
+    </p>
+    <p class="informe-body">
+        La utilidad de esta herramienta está en otorgar la posibilidad de visualizar de manera más clara y
+        sencilla los datos recopilados por un dispositivo de monitoreo de actividad física, junto con otorgar nuevas perspectivas
+        a los datos sin procesar que se obtienen de estos dispositivos. La herramienta está indicada para usuarios quienes deseen
+        explorar sus datos de entrenamiento muscular, y que busquen una forma más sencilla de visualizarlos, a la vez obteniendo
+        una nueva perspectiva de los mismos.
+        
+
+    </p>
+
+    <p class ="informe-header">
+        2. Abstracción de Tareas 
+</p>
+<p class="informe-body">
+
+    "Conocer los nombres y ubicaciones de los grupos musculares en el cuerpo humano"<br><br> 
+
+    Esta primera tarea cobra relevancia en el contexto de la herramienta y el dominio descrito, ya que  para aprovechar al máximo la herramienta, es
+    necesario que el usuario conozca los nombres y ubicaciones de los grupos en el cuerpo humano, para asociarlos al entrenamiento 
+    que él mismo ha llevado a cabo.
+
+     <br><br> 
+   "Comparar la cantidad de entrenamiento total entre distintos grupos musculares."<br><br> 
+   Esta segunda tarea corresponde a una tarea de bajo nivel, sin embargo, es una de gran relevacia cuando es colocada en el contexto
+   del dominio y los datos utilizados. Su importancia se debe principalmente a que en el contexto de la actividad física, muchos practicantes
+   solemos adoptar afinidad por ciertos grupos musculares y por lo tanto, entrenamos más de forma específica para estos. Por otro lado,
+   lo opuesto sucede con los grupos musculares más dificiles de entrenar; se entrenan en menor escala.<br>
+Es por esto que la tarea de comparar la cantidad de entrenamiento realizado por cada grupo muscular es una tarea de gran relevancia para
+    lograr evitar desbalances musculares, que pueden ser perjudiciales para el rendimiento deportivo y la salud en general.
+    <br>
+    <br>
+    "Visualizar tendencias de frecuencia de entrenamiento en distintos lapsos de tiempo"<br><br>
+    Esta tercera tarea es la razón por la cual se incluye el filtro por fecha en la visualización. Tal como fue mencionado en la sección
+    anterior, la actividad física es una actividad que se realiza de forma regular durante períodos prolongados, por lo que es importante 
+    poder visualizar tendencias de entrenamiento en distintos lapsos de tiempo más cortos, con el fin de poder identificar si se está
+    cumpliendo con los objetivos de entrenamiento, o no.
+
+    <br><br>
+    
+    <p class ="informe-header">
+        3. Codificación visual e interacciones
+<p class="informe-body">
+        
+        Para la primera tarea de distinguir los nombres y ubicaciones de los grupos musculares, se utilizó los distintos
+        "dibujos" o "outlines" que representan a cada grupo muscular,junto con el nombre de cada uno de ellos que aparece al costado. 
+        Los distintos "dibujos" son marcas de área bidimensional, cuyo 
+        canal de forma se utiliza para codificar un dato categórico (cualitativo, de posición), que corresponde a la ubicación del grupo muscular
+        en el cuerpo humano. Por otra parte, se podría considerar los nombres del costado como una leyenda o guía más que un dato en particular,
+        ya que la información está en los dibujos. En términos de interacciones, el "hover" con el mouse sobre los distintos 
+        grupos musculares, permite al usuario visualizar el nombre de cada uno de ellos, lo que facilita 
+        aún más la tarea de identificarlos. Finalmente la interacción presente al hacer "hover" o click sobre el nombre 
+        de cada grupo muscular, permite al usuario visualizar con aún más claridad
+        la ubicación de cada grupo muscular en el cuerpo. La razón por la cual se eligió el canal de forma (dibujos) para codificar la
+         ubicación de los grupos, es porque posee una consistencia externa inequívoca. Esto es, los dibujos son fáciles de reconocer ya
+        que es fácil asumir que los usuarios de esta herramienta poseen algo de conocimiento previo en esta área. La interacción del
+        hover fue elegida simplemente por conveniencia y porque otorga un rápido acceso al dato que se desea visualizar, y cumple con
+        el principio "overview first, details on demand". 
+<br><br>
+        Para la segunda tarea, se utiliza el canal de opacidad/oscuridad de color café sobre la misma marca de área bidimensional de cada
+        grupo distinto. Específicamente en este caso, un color café más opaco indica que un grupo muscular fue entrenado más veces que otro grupo
+        que posea un color café más claro. Este canal está asistido por la leyenda que está debajo de la visualización del cuerpo.
+        En términos de interacciones, el "hover" con el mouse sobre los distintos también desplega en pantalla el dato numérico (cuantitativo y secuencial)
+        codificado por el color. El canal de color fue escogido porque encajaba correctamente con el dominio y los datos utilizados, ya que
+        el color café, o bien, naranjo oscuro (a veces rojo) es el color que se utiliza para representar el uso muscular la mayoría de los
+        gimnasios, al mostrar qué musculos son trabajados en un ejercicio (consistencia externa).
+         
+        
+<br><br>
+
+Finalmente, para la tercera tarea de visualizar tendencias de entrenamiento en distintos lapsos de tiempo, se utilizo 
+el gráfico de línea temporal, que consiste de puntos
+para mostrar los valores acumulados de entrenamiento (en repeticiones acumuladas) y lineas para enfatizar la evolución del valor a través 
+del tiempo. La posición horizontal de los puntos codifica el tiempo, mientras que la posición vertical codifica el valor acumulado de entrenamiento.
+En términos de interacción, el filtro por fecha facilita la tarea de una inspección más cercana a lapsos de tiempos más cortos, o como sean
+preferidos por el usuario. Se utilizaron los canales de posición para los datos codificados, debido a que presentan una efectividad 
+muy ventajosa según lo aprendido en el curso. Finalmente, la razón por la cual se implemento la interacción de filtro por fecha, es porque
+le permite al usuario, en un comienzo, un vistazo general de la evolución de su entrenamoiendo a través del tiempo, y luego, si lo desea,
+puede realizar una inspección más cercana a un lapso de tiempo más corto, para identificar si se está cumpliendo con los objetivos de entrenamiento.
+    </p>
+</p>
+
+</p>
+<p class="subtitle"><a href="index.html">ir a la visualización</a></p>
+
+<br><br>
+
+
+</head>
+    
+</body>
+</html>

@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sono:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+    --maincolour: rgb(255, 255, 255);
+    --strokecolour: #000000;
+    
+}
+.muscle-groups,
+.other {
+    position: relative;
+    background: var(--maincolour);
+    width: 600px;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-top: 0.55rem solid var(--maincolour);
+}
+
+.other {
+    margin-left: 20px;
+    height: 418px;
+}
+rect{
+margin-left: 10%;
+}
+.muscle-groups h1 {
+    margin: -0.5rem -1rem 1rem;
+    padding: 0 1rem 0.75rem;
+    background: var(--maincolour);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.2rem;
+    
+    font-weight: 400;
+}
+
+.muscle-groups h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.muscle-groups label+h2 {
+    margin-top: 1rem;
+}
+
+.muscle-groups label {
+    width: 50px;
+    display: block;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    position: relative;
+    z-index: 200;
+    border-left: 5px solid transparent;
+    padding-left: 6px;
+    margin-left: -11px;
+}
+
+.muscle-groups label:hover,
+.muscle-groups label.hover {
+    opacity: 1;
+    border-color: rgba(109, 65, 65, 0.75);
+}
+
+.muscle-groups input:checked+label {
+    opacity: 1;
+    font-weight: bold;
+    /*underline text*/
+    text-decoration: underline;
+}
+.muscle-groups svg {
+    position: absolute;
+    right: -1.5rem;
+    bottom: 2rem;
+    height: 330px;
+    z-index: 100;
+    
+}
+
+
+
+.muscle-groups svg g[id] path {
+    opacity: 0.9;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.muscle-groups svg g g[id]:hover path {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.muscle-groups .muscles-helper {
+    display: none;
+}
+
+.muscle-groups label[for="obliques"]:hover~svg #Obliques path {
+        animation: blinker 0.5s ease-in infinite;
+
+}
+
+.muscle-groups .obliques:checked~svg #Obliques path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="abs"]:hover~svg #Abs path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .abs:checked~svg #Abs path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="quads"]:hover~svg #Quads path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .quads:checked~svg #Quads path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="biceps"]:hover~svg #Biceps path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .biceps:checked~svg #Biceps path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="adductors"]:hover~svg #Adductors path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .adductors:checked~svg #Adductors path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="pectorals"]:hover~svg #Pectorals path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .pectorals:checked~svg #Pectorals path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="deltoids"]:hover~svg #Deltoids path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .deltoids:checked~svg #Deltoids path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="hamstrings"]:hover~svg #Hamstrings path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .hamstrings:checked~svg #Hamstrings path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="quads"]:hover~svg #Quads path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .quads:checked~svg #Quads path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="forearms"]:hover~svg #Forearms path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .forearms:checked~svg #Forearms path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="calves"]:hover~svg #Calves path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .calves:checked~svg #Calves path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="triceps"]:hover~svg #Triceps path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .triceps:checked~svg #Triceps path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="glutes"]:hover~svg #Glutes path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .glutes:checked~svg #Glutes path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="lats"]:hover~svg #Lats path {
+        animation: blinker 0.4s ease-out infinite;
+
+}
+
+.muscle-groups .lats:checked~svg #Lats path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+.muscle-groups label[for="trapezius"]:hover~svg #Trapezius path {
+    animation: blinker 0.4s ease-out infinite;
+}
+
+
+
+.muscle-groups .trapezius:checked~svg #Trapezius path {
+    opacity: 1;
+    stroke: var(--strokecolour);
+    
+    stroke-width: 1px;
+    stroke-linejoin: round;
+}
+
+
+body {
+    font-family: 'Sono';
+    color: #000000da;
+    font-size: 8pt;
+    background: #ffe3c3;
+    caret-color: transparent;
+    user-select: none;
+    
+
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+    padding: 0 0;
+    margin-top: 8%;
+}
+
+main .info:hover {
+    opacity: 1;
+}
+
+main .info a {
+    color: #eee;
+    color: rgb(1, 8, 108);
+}
+.placeholder{
+    height:417px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#legendContainer{
+    display: flex;
+    margin-top: 1%;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+    margin-bottom: 100px;
+    padding-left: 1%;
+    margin-right: 1px;
+    width: 340px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-left: 16.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+label{
+    caret-color: transparent;
+}
+input{
+    caret-color: transparent;
+}
+
+text{
+    font-size: 0.6rem;  
+    font-family: 'Sono';
+    font-weight: 700;
+}
+
+#x-axis text{
+    letter-spacing: -0.15em;
+}
+
+@keyframes blinker {
+    50% {
+      fill:pink
+    }
+  }
+path{
+    z-index: 100     !important;
+}
+a{
+    color: rgb(255, 40, 40);
+}
+
+.informe-title{
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    /*centered*/
+    display: flex;
+    justify-content: center;
+    color: #000000;
+
+}
+.subtitle{ font-size: 1rem;
+    margin-bottom: 1rem;
+    /*centered*/
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+
+.informe-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size:1.5rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #000000;
+
+
+}
+.informe-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size:1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    color: #000000;
+
+}
+  
+.bold{
+    font-weight: 700;
+}
